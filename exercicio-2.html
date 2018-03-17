@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="valor"></div>
+    <button id="adicionar" type="button">Adicionar</button>
+    <button id="remover"   type="button">Remover  </button>
+
+    <script>
+
+      document.getElementById("valor").innerHTML = 0;
+
+      document.getElementById( "adicionar" ).addEventListener( "click", function(){
+        var valor = parseInt( document.getElementById("valor").innerHTML ) + 1;
+        document.getElementById("valor").innerHTML = valor;
+      });
+
+      document.getElementById( "remover" ).addEventListener( "click", function(){
+        var valor = parseInt( document.getElementById("valor").innerHTML ) - 1;
+        document.getElementById("valor").innerHTML = valor;
+      });
+
+    </script>
+
+  </body>
+</html>

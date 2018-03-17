@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+        <img id="imagem" src="https://camo.githubusercontent.com/b8a01666b53802115c2433b250773c6363ec5624/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4c6f70783965556933347262712f67697068792e676966" alt="">
+    </div>
+
+    <div>
+        <button id="botao" type="button">botao</button>
+    </div>
+
+
+    <script>
+
+    /*
+    document.getElementById( "botao" ).addEventListener( "click", function(){
+      if ( document.getElementById( "imagem" ).style.display == "none" ) {
+        document.getElementById( "imagem" ).style.display = "block";
+      }else {
+        document.getElementById( "imagem" ).style.display = "none";
+      }
+    } )
+
+    or visibility = "hidden"/"visible"
+    */
+
+    document.getElementById( "botao" ).addEventListener( "click", mudarEstadoDaImagem )
+
+    function mudarEstadoDaImagem(){
+      if ( document.getElementById( "imagem" ).style.display == "none" ) {
+        document.getElementById( "imagem" ).style.display = "block";
+      }else {
+        document.getElementById( "imagem" ).style.display = "none";
+      }
+    }
+
+
+    </script>
+
+  </body>
+</html>
